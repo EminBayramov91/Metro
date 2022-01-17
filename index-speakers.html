@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <section class="body-one">
+
+        <header class="header">
+            <div class="header-background"></div>
+            <div class="header-content">
+                <div class="header-items">
+                    <div class="header-logo">
+                        <a href="#">
+                            <img src="images/metro-logo2.png" alt="">
+                        </a>
+                    </div>
+                    <div class="header-list">
+                        <ul class="header-list__item">
+                            <li class="header-item">
+                                <a class="header-link" href="#">О выставке</a>
+                                <ul class="header-list-items">
+                                    <li>
+                                        <a href="#">О выставке</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">приветствия</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">акредитация сми</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">схема проезда</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">фото и видео</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">архив</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header-item">
+                                <a class="header-link" href="#">Программа и спикеры</a>
+                            </li>
+                            <li class="header-item">
+                                <a class="header-link" href="#">Партнеры</a>
+                            </li>
+                            <li class="header-item">
+                                <a class="header-link" href="#">Карта выставки</a>
+                            </li>
+                            <li class="header-item">
+                                <a class="header-link" href="#">Как добраться</a>
+                            </li>
+                            <li class="header-item">
+                                <a class="header-link" href="#">FAQ</a>
+                            </li>
+                            <li class="header-item">
+                                <a class="header-link" href="#">Экспоненту</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header-btn">
+                        <a href="#">ЗАРЕГИСТРИРОВАТЬСЯ</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+        <div class="body-content">
+            <h1 class="body-title container">
+                СПИКЕРЫ 2020 
+            </h1>
+            <div class="speakers">
+                <div class="container">
+
+                    <div class="speakers-top">
+                        <p class="speakers-title">
+                            150 спикеров
+                        </p>
+                    </div>
+
+
+                    <!-- <span class="event-select-title">Дата</span>
+                <form>
+                    <div class="multiselect">
+                        <div class="selectBox" onclick="showCheckboxes()">
+                            <select>
+                                <option>Все даты</option>
+                            </select>
+                            <div class="overSelect"></div>
+                        </div>
+                        <div id="checkboxes">
+                            <label for="one">
+                                <input type="checkbox" id="one" />18 марта</label>
+                            <label for="two">
+                                <input type="checkbox" id="two" />19 марта</label>
+                            <label for="three">
+                                <input type="checkbox" id="three" />20 марта</label>
+                        </div>
+                    </div>
+                </form> -->
+
+
+                    <div class="speakers-select">
+                        <div class="speakers-select-items">
+
+                            <div class="speakers-select-item">
+                                <div class="speakers-select-title">Дата</div>
+                                <div class="speakers-select-container">
+                                    <button onclick="openData()" type="button" class="speakers-btn">
+                                        <span>Все даты</span>
+                                        <img class="speakers-select-img" src="./images/event-vector.svg" alt="#">
+                                    </button>
+                                    <div class="speakers-select-content">
+                                        <div class="speakers-select-checkbox">
+                                            <label>
+                                                <span class="speakers-select-check">18 марта</span>
+                                                <input type="checkbox" id="option1">
+                                            </label>
+                                        </div>
+                                        <div class="speakers-select-checkbox">
+                                            <label>
+                                                <span class="speakers-select-check">19 марта</span>
+                                                <input type="checkbox" id="option2">
+                                            </label>
+                                        </div>
+                                        <div class="speakers-select-checkbox">
+                                            <label>
+                                                <span class="speakers-select-check">20 марта</span>
+                                                <input type="checkbox" id="option3">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="speakers-select-item">
+                                <div class="speakers-select-title">Площадки</div>
+                                <div class="speakers-select-container">
+                                    <button onclick="openData()" type="button" class="speakers-btn">
+                                        <span>Все площадки</span>
+                                        <img class="speakers-select-img" src="./images/event-vector.svg" alt="#">
+                                    </button>
+                                    <div class="speakers-select-content">
+                                        <div class="speakers-select-checkbox">
+                                            <label>
+                                                <span class="speakers-select-check">M2 METRO для бизнеса</span>
+                                                <input type="checkbox" id="option1">
+                                            </label>
+                                        </div>
+                                        <div class="speakers-select-checkbox">
+                                            <label>
+                                                <span class="speakers-select-check">M5 CHEFS’ STAGE МИРОВЫЕ
+                                                    ТРЕНДЫ</span>
+                                                <input type="checkbox" id="option2">
+                                            </label>
+                                        </div>
+                                        <div class="speakers-select-checkbox">
+                                            <label>
+                                                <span class="speakers-select-check">M9 CHEFS’ STAGE АВТОРСКАЯ И
+                                                    РЕГИОНАЛЬНАЯ КУХНЯ </span>
+                                                <input type="checkbox" id="option3">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="speakers-select-item">
+                                <div class="speakers-select-title">Тип события
+                                </div>
+                                <div class="speakers-select-container">
+                                    <button onclick="openData()" type="button" class="speakers-btn">
+                                        <span>Любой тип</span>
+                                        <img class="speakers-select-img" src="./images/event-vector.svg" alt="#">
+                                    </button>
+                                    <div class="speakers-select-content">
+                                        <div class="speakers-select-checkbox">
+                                            <label>
+                                                <span class="speakers-select-check">Для ресторанного бизнеса</span>
+                                                <input type="checkbox" id="option1">
+                                            </label>
+                                        </div>
+                                        <div class="speakers-select-checkbox">
+                                            <label>
+                                                <span class="speakers-select-check">Дискуссии</span>
+                                                <input type="checkbox" id="option2">
+                                            </label>
+                                        </div>
+                                        <div class="speakers-select-checkbox">
+                                            <label>
+                                                <span class="speakers-select-check">Мастер-классы</span>
+                                                <input type="checkbox" id="option3">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="speakers-about">
+
+                        <div class="speakers-people">
+                            <div class="speakers-info">
+                                <div class="speakers-info-picture">
+                                    <img src="images/speakers-peop1.png" alt="">
+                                </div>
+                                <div class="speakers-info-name">
+                                    Cергей Ицков
+                                </div>
+                                <div class="speakers-info-text">
+                                    Специалист по ресторанному маркетингу, Управляющий партнер компании Welcomepro
+                                </div>
+                                <div class="speakers-info-btn">
+                                    <a href="#">показать мероприятия</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="speakers-people">
+                            <div class="speakers-info">
+                                <div class="speakers-info-picture">
+                                    <img src="images/speakers-peop2.png" alt="">
+                                </div>
+                                <div class="speakers-info-name">
+                                    Karmela Kovacic
+                                </div>
+                                <div class="speakers-info-text">
+                                    Ultrafresh Expert, Metro AG
+                                </div>
+                                <div class="speakers-info-btn">
+                                    <a href="#">показать мероприятия</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="speakers-people">
+                            <div class="speakers-info">
+                                <div class="speakers-info-picture">
+                                    <img src="images/speakers-peop3.png" alt="">
+                                </div>
+                                <div class="speakers-info-name">
+                                    Александр Волков-Медведев
+                                </div>
+                                <div class="speakers-info-text">
+                                    Шеф-повар ресторана Ruski
+                                </div>
+                                <div class="speakers-info-btn">
+                                    <a href="#">показать мероприятия</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="speakers-people">
+                            <div class="speakers-info">
+                                <div class="speakers-info-picture">
+                                    <img src="images/speakers-peop1.png" alt="">
+                                </div>
+                                <div class="speakers-info-name">
+                                    Cергей Ицков
+                                </div>
+                                <div class="speakers-info-text">
+                                    Специалист по ресторанному маркетингу, Управляющий партнер компании Welcomepro
+                                </div>
+                                <div class="speakers-info-btn">
+                                    <a href="#">показать мероприятия</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="speakers-people">
+                            <div class="speakers-info">
+                                <div class="speakers-info-picture">
+                                    <img src="images/speakers-peop2.png" alt="">
+                                </div>
+                                <div class="speakers-info-name">
+                                    Karmela Kovacic
+                                </div>
+                                <div class="speakers-info-text">
+                                    Ultrafresh Expert, Metro AG
+                                </div>
+                                <div class="speakers-info-btn">
+                                    <a href="#">показать мероприятия</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="speakers-people">
+                            <div class="speakers-info">
+                                <div class="speakers-info-picture">
+                                    <img src="images/speakers-peop3.png" alt="">
+                                </div>
+                                <div class="speakers-info-name">
+                                    Александр Волков-Медведев
+                                </div>
+                                <div class="speakers-info-text">
+                                    Шеф-повар ресторана Ruski
+                                </div>
+                                <div class="speakers-info-btn">
+                                    <a href="#">показать мероприятия</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="speakers-more-btn">
+                        <a href="#">
+                            <img src="images/speakers-more.svg" alt="">
+                            загрузить еще 
+                        </a>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="footer">
+            <div class="footer-content-two">
+                <div class="footer-about">
+                    <div class="footer-metro">
+                        <p class="footer-logo__text">организатор</p>
+                        <div class="footer-logo">
+                            <a href="#">
+                                <img src="images/footer-logo.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-sber">
+                        <p class="footer-logo__text footer-logo__text-two">Стратегический партнер</p>
+                        <div class="footer-logo">
+                            <a href="#">
+                                <img src="images/footer-logo2.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-items">
+                    <div class="footer-item">
+                        <div class="footer-item__logo">
+                            <a href="https://vk.com/metroexpo">
+                                <img src="images/logo-vk.png" alt="">
+                            </a>
+                            <a href="https://www.instagram.com/metroexpo_2022/">
+                                <img src="images/logo-instagram.png" alt="">
+                            </a>
+                            <a href="https://www.facebook.com/metroccexpo">
+                                <img src="images/logo-facebook.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="footer-popup">
+                            <button class="footer-popup__btn">
+                                обратная связь
+                            </button>
+                            <div class="footer-modal">
+                                <div class="footer-modal__content">
+                                    <div class="footer-modal__close">
+                                        <img src="images/close-icon.png" alt="">
+                                    </div>
+                                    <div class="footer-modal__content-title">обратная связь</div>
+                                    <form class="footer-modal__content-form">
+                                        <select class="footer-modal__content-select">
+                                            <option value="" disabled="" selected="">Выберите тему сообщения</option>
+                                            <option value="Стать экспонентом и узнать стоимость участия">Стать
+                                                экспонентом и
+                                                узнать стоимость участия
+                                            </option>
+                                            <option value="Стать партнером и узнать стоимость участия">Стать партнером и
+                                                узнать
+                                                стоимость участия
+                                            </option>
+                                            <option value="Стать посетителем">Стать посетителем</option>
+                                            <option value="Стать спикером и принять участие в деловой программе">Стать
+                                                спикером
+                                                и принять участие в деловой программе
+                                            </option>
+                                            <option value="Сообщить о проблеме">Сообщить о проблеме</option>
+                                            <option value="Другое">Другое</option>
+                                        </select>
+                                        <input class="footer-modal__content-input" autocomplete="off" type="text"
+                                            placeholder="Ваше имя">
+                                        <div class="footer-modal__hover">
+                                            <input class="footer-modal__content-input" autocomplete="off" type="text"
+                                                placeholder="Номер карты METRO">
+                                            <span class="footer-modal__hover-info">
+                                                <div class="footer-modal__hover-info-container">
+                                                    <p class="hover-p">Введите номер клиента METRO, расположенный под
+                                                        штрих-кодом
+                                                    </p>
+                                                    <img class="hover-img" src="images/info-card.png" alt="">
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <input class="footer-modal__content-input" autocomplete="off" type="text"
+                                            placeholder="Email">
+                                        <input class="footer-modal__content-input" autocomplete="off" type="text"
+                                            placeholder="Мобильный телефон">
+                                        <textarea class="footer-modal__content-input footer-modal__content-textarea"
+                                            autocomplete="off" type="text" placeholder="Текст сообщения"></textarea>
+
+
+                                        <div class="g-recaptcha" data-sitekey="6Lfg7lIUAAAAAFO5ncDbbRD-Z6tyOh84OS-3LXGO"
+                                            style="margin: 0px 0px 0px 72px;">
+                                            <div style="width: 304px; height: 78px;">
+                                                <div>
+                                                    <iframe title="reCAPTCHA"
+                                                        src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Lfg7lIUAAAAAFO5ncDbbRD-Z6tyOh84OS-3LXGO&amp;co=aHR0cHM6Ly9tZXRyby1leHBvLnJ1OjQ0Mw..&amp;hl=en&amp;v=-FJgYf1d3dZ_QPcZP7bd85hc&amp;size=normal&amp;cb=8iogne2nncdk"
+                                                        width="304" height="78" role="presentation"
+                                                        name="a-wx440gj4nwfc" frameborder="0" scrolling="no"
+                                                        sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+                                                </div>
+                                                <textarea id="g-recaptcha-response" name="g-recaptcha-response"
+                                                    class="g-recaptcha-response"
+                                                    style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+                                            </div>
+                                            <iframe style="display: none;"></iframe>
+                                        </div>
+
+                                        <button class="footer-modal__content-btn" type="submit">отправить</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="footer-info">
+                        <div class="footer-text footer-text__one">COPYRIGHT 2022 METRO C&C</div>
+                        <div class="footer-text">ПЕРЕПЕЧАТКА И КОПИРОВАНИЕ ИНФОРМАЦИИ СТРОГО ЗАПРЕЩЕНЫ.</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </section>
+
+
+</body>
+
+
+<script src="js/main.min.js"></script>
+</body>
+
+</html>

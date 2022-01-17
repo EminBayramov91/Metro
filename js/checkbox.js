@@ -16,7 +16,21 @@ for (let i = 0; i < labels.length; i++) {
     });
 }
 
-function openData() {
-    document.querySelector('.event-select-content').classList.toggle('active-content')
-    document.querySelector('.event-select-img').classList.toggle('active-vector')
+function openDataOne() {
+    document.querySelector('.checkbox-content-one').classList.toggle('active-content')
+    document.querySelector('.checkbox-img__one').classList.toggle('active-vector')
 }
+function openDataTwo() {
+    document.querySelector('.checkbox-content-two').classList.toggle('active-content')
+    document.querySelector('.checkbox-img__two').classList.toggle('active-vector')
+}
+function openDataThree() {
+    document.querySelector('.checkbox-content-three').classList.toggle('active-content')
+    document.querySelector('.checkbox-img__three').classList.toggle('active-vector')
+}
+function openDataFour() {
+    document.querySelector('.checkbox-content-four').classList.toggle('active-content')
+    document.querySelector('.checkbox-img__four').classList.toggle('active-vector')
+}
+
+
