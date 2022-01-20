@@ -53,16 +53,24 @@ let swiper2 = new Swiper('.home-swiper', {
   });
 
 const mySwiperTop = new Swiper(".mySwiperTop", {
-    slidesPerView: 8,
-    centeredSlides: true,
-    spaceBetween: 40,
+    slidesPerView: 4,
+    spaceBetween: 20,
+    loop: true,
     slidesPerGroup: 1,
     clickable: true,
-    reverse: true,
-    loop: true,
-    loopFillGroupWithBlank: true,
+    breakpoints: {
+        1000: {
+            slidesPerView: 8
+        },
+        600: {
+            slidesPerView: 5
+        }
+    },
+    // reverse: true,
+    // loopFillGroupWithBlank: true,
     navigation: {
         nextEl: ".swiper-button-next1",
         prevEl: ".swiper-button-prev1",
     },
+
 });
