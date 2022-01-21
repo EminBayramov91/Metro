@@ -48,7 +48,7 @@ let swiper2 = new Swiper('.home-swiper', {
       el: '.swiper-scrollbar',
     },
 
-    // direction: 'horizontal',
+    direction: 'horizontal',
     
   });
 
