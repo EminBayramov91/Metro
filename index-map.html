@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -22,7 +22,7 @@
                         <img src="images/metro-logo2.png" alt="">
                     </div>
                     <a class="header-btn">
-                        4-6 апреля  |   МОСКВА
+                        4-6 апреля | МОСКВА
                     </a>
                     <div class="header-items">
                         <div class="header-menu__inner">
@@ -237,7 +237,7 @@
                                 </div>
                             </div>
                         </div>
-    
+
                     </div>
                     <div class="header-items__btn ">
                         <img src="../images/header-media-dot.svg" alt="">
@@ -275,11 +275,10 @@
         </header>
 
 
-
         <div class="body-content">
             <div class="map-item">
-                <div class="">
-                    <h1 class="body-title-two">
+                <div class="map-item-container">
+                    <h1 class="map-item-info__title">
                         СХЕМА ПРОЕЗДА METRO EXPO
                     </h1>
                     <div class="map-item-page container">
@@ -296,16 +295,17 @@
                                         а/я 92. </p>
                                 </div>
                                 <div class="map-item-way">
-                                    <span class="map-item-legs">
-                                        Станция метро &laquo;Мякинино&raquo;<br> выход в павильоны выставочного центра.
-                                    </span>
+                                        <span class="map-item-legs">
+                                            Станция метро &laquo;Мякинино&raquo;<br> выход в павильоны выставочного центра.
+                                        </span>
                                     <span class="map-item-car">
-                                        Пересечение МКАД (внешняя сторона, 66 км) и Волоколамского шоссе.
-                                    </span>
+                                            Пересечение МКАД (внешняя сторона, 66 км) и Волоколамского шоссе.
+                                        </span>
                                 </div>
                             </div>
                             <div class="div-map">
-                                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab53a675877edfad494bd30b9a43dd723d616420e9ee983ee1986bd0c4989ad61&amp;source=constructor" width="670" height="695" frameborder="0"></iframe>
+                                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab53a675877edfad494bd30b9a43dd723d616420e9ee983ee1986bd0c4989ad61&amp;source=constructor"
+                                        width="670" height="695" frameborder="0"></iframe>
                             </div>
                         </div>
                     </div>
@@ -316,7 +316,7 @@
 
 
         <footer class="footer">
-            <div class="footer-content">
+            <div class="footer-content footer-content-two">
                 <div class="footer-about">
                     <div class="footer-metro">
                         <p class="footer-logo__text">организатор</p>
@@ -326,14 +326,6 @@
                             </a>
                         </div>
                     </div>
-    <!--                <div class="footer-sber">-->
-    <!--                    <p class="footer-logo__text footer-logo__text-two">Стратегический партнер</p>-->
-    <!--                    <div class="footer-logo">-->
-    <!--                        <a href="#">-->
-    <!--                            <img src="images/footer-logo2.png" alt="">-->
-    <!--                        </a>-->
-    <!--                    </div>-->
-    <!--                </div>-->
                 </div>
                 <div class="footer-items">
                     <div class="footer-item">
@@ -404,7 +396,8 @@
                                                   autocomplete="off" type="text" placeholder="Текст сообщения"></textarea>
     
     
-                                        <div class="g-recaptcha footer-modal__control" data-sitekey="6Lfg7lIUAAAAAFO5ncDbbRD-Z6tyOh84OS-3LXGO"
+                                        <div class="g-recaptcha footer-modal__control"
+                                             data-sitekey="6Lfg7lIUAAAAAFO5ncDbbRD-Z6tyOh84OS-3LXGO"
                                              style="margin: 0px 0px 0px 72px;">
                                             <div style="width: 304px; height: 78px;">
                                                 <div>
@@ -439,20 +432,8 @@
 
     </section>
 
-
-
-</body>
-
-
-
-
-
-
-
-<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
-<script src="icon_customImage.js" type="text/javascript"></script>
-<script src="js/header.js"></script>
-<script src="js/main.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/yandexMap.js"></script>
 </body>
 
 </html>

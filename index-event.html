@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
     <section class="body-one">
-
         <header class="header">
             <div class="header-background"></div>
             <div class="header-container">
@@ -22,7 +18,7 @@
                         <img src="images/metro-logo2.png" alt="">
                     </div>
                     <a class="header-btn">
-                        4-6 апреля  |   МОСКВА
+                        4-6 апреля | МОСКВА
                     </a>
                     <div class="header-items">
                         <div class="header-menu__inner">
@@ -237,7 +233,7 @@
                                 </div>
                             </div>
                         </div>
-    
+
                     </div>
                     <div class="header-items__btn ">
                         <img src="../images/header-media-dot.svg" alt="">
@@ -273,9 +269,6 @@
                 </div>
             </div>
         </header>
-
-
-
         <div class="body-content">
             <h1 class="body-title container">
                 ОБРАЗОВАТЕЛЬНАЯ ПРОГРАММА 2020
@@ -297,15 +290,15 @@
 
 
                     <div class="event-select">
+                        <div class="event-accordion" onclick="activeEventFilter()">Фильтр</div>
                         <div class="event-select-items">
-
                             <div class="event-select-item">
                                 <div class="event-select-title">Дата</div>
                                 <div class="event-select-container">
                                     <button onclick="openDataOne()" type="button" class="event-btn">
                                         <span>Все даты</span>
                                         <img class="event-select-img checkbox-img__one" src="./images/event-vector.svg"
-                                            alt="#">
+                                             alt="#">
                                     </button>
                                     <div class="event-select-content checkbox-content-one">
                                         <div class="event-select-checkbox-inner">
@@ -334,14 +327,13 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="event-select-item">
                                 <div class="event-select-title">Площадки</div>
                                 <div class="event-select-container">
                                     <button onclick="openDataTwo()" type="button" class="event-btn">
                                         <span>Все площадки</span>
                                         <img class="event-select-img checkbox-img__two" src="./images/event-vector.svg"
-                                            alt="#">
+                                             alt="#">
                                     </button>
                                     <div class="event-select-content checkbox-content-two">
                                         <div class="event-select-checkbox-inner">
@@ -398,14 +390,13 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="event-select-item">
                                 <div class="event-select-title">спикеры</div>
                                 <div class="event-select-container">
                                     <button onclick="openDataThree()" type="button" class="event-btn">
                                         <span>Все спикеры</span>
                                         <img class="event-select-img checkbox-img__three"
-                                            src="./images/event-vector.svg" alt="#">
+                                             src="./images/event-vector.svg" alt="#">
                                     </button>
                                     <div class="event-select-content checkbox-content-three">
                                         <div class="event-select-checkbox-inner">
@@ -434,14 +425,13 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="event-select-item">
                                 <div class="event-select-title">Тип события</div>
                                 <div class="event-select-container">
                                     <button onclick="openDataFour()" type="button" class="event-btn">
                                         <span>Любой тип</span>
                                         <img class="event-select-img checkbox-img__four" src="./images/event-vector.svg"
-                                            alt="#">
+                                             alt="#">
                                     </button>
                                     <div class="event-select-content checkbox-content-four">
                                         <div class="event-select-checkbox-inner">
@@ -470,7 +460,6 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
 
@@ -729,7 +718,7 @@
                         </div>
                     </div>
 
-                    <a href="#">
+                    <!-- <a href="#">
                         <div class="speakers-more-btn">
                             <div class="speakers-more-btn-link">
 
@@ -738,15 +727,20 @@
 
                             </div>
                         </div>
-                    </a>
+                    </a> -->
+                    <div class="report-more-btn container" onclick="rotateElement()">
+                        <a>
+                            <img class="philosophy-swiper-next-img" src="images/speakers-more.svg" alt="">
+                            загрузить еще
+                        </a>
+                    </div>
 
                 </div>
             </div>
         </div>
-
-
+        
         <footer class="footer">
-            <div class="footer-content">
+            <div class="footer-content footer-content-two">
                 <div class="footer-about">
                     <div class="footer-metro">
                         <p class="footer-logo__text">организатор</p>
@@ -756,14 +750,6 @@
                             </a>
                         </div>
                     </div>
-    <!--                <div class="footer-sber">-->
-    <!--                    <p class="footer-logo__text footer-logo__text-two">Стратегический партнер</p>-->
-    <!--                    <div class="footer-logo">-->
-    <!--                        <a href="#">-->
-    <!--                            <img src="images/footer-logo2.png" alt="">-->
-    <!--                        </a>-->
-    <!--                    </div>-->
-    <!--                </div>-->
                 </div>
                 <div class="footer-items">
                     <div class="footer-item">
@@ -778,7 +764,7 @@
                                 <img src="images/logo-facebook.png" alt="">
                             </a>
                         </div>
-    
+
                         <div class="footer-popup">
                             <button class="footer-popup__btn">
                                 обратная связь
@@ -817,14 +803,14 @@
                                             <input class="footer-modal__content-input" autocomplete="off" type="text"
                                                    placeholder="Номер карты METRO">
                                             <span class="footer-modal__hover-info">
-                                                    <div class="footer-modal__hover-info-container">
-                                                        <p class="hover-p">Введите номер клиента METRO, расположенный
-                                                            под
-                                                            штрих-кодом
-                                                        </p>
-                                                        <img class="hover-img" src="images/info-card.png" alt="">
-                                                    </div>
-                                                </span>
+                                                        <div class="footer-modal__hover-info-container">
+                                                            <p class="hover-p">Введите номер клиента METRO, расположенный
+                                                                под
+                                                                штрих-кодом
+                                                            </p>
+                                                            <img class="hover-img" src="images/info-card.png" alt="">
+                                                        </div>
+                                                    </span>
                                         </div>
                                         <input class="footer-modal__content-input" autocomplete="off" type="text"
                                                placeholder="Email">
@@ -832,9 +818,10 @@
                                                placeholder="Мобильный телефон">
                                         <textarea class="footer-modal__content-input footer-modal__content-textarea"
                                                   autocomplete="off" type="text" placeholder="Текст сообщения"></textarea>
-    
-    
-                                        <div class="g-recaptcha footer-modal__control" data-sitekey="6Lfg7lIUAAAAAFO5ncDbbRD-Z6tyOh84OS-3LXGO"
+
+
+                                        <div class="g-recaptcha footer-modal__control"
+                                             data-sitekey="6Lfg7lIUAAAAAFO5ncDbbRD-Z6tyOh84OS-3LXGO"
                                              style="margin: 0px 0px 0px 72px;">
                                             <div style="width: 304px; height: 78px;">
                                                 <div>
@@ -851,13 +838,13 @@
                                             </div>
                                             <iframe style="display: none;"></iframe>
                                         </div>
-    
+
                                         <button class="footer-modal__content-btn" type="submit">отправить</button>
                                     </form>
                                 </div>
                             </div>
                         </div>
-    
+
                     </div>
                     <div class="footer-info">
                         <div class="footer-text footer-text__one">COPYRIGHT 2022 METRO C&C</div>
@@ -867,13 +854,8 @@
             </div>
         </footer>
 
+
     </section>
-
-
+    <script src="js/main.js"></script>
 </body>
-
-<script src="js/checkbox.js"></script>
-<script src="js/main.min.js"></script>
-</body>
-
 </html>

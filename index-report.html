@@ -12,7 +12,7 @@
     />
 
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -27,7 +27,7 @@
                     <img src="images/metro-logo2.png" alt="">
                 </div>
                 <a class="header-btn">
-                    4-6 апреля  |   МОСКВА
+                    4-6 апреля | МОСКВА
                 </a>
                 <div class="header-items">
                     <div class="header-menu__inner">
@@ -291,18 +291,18 @@
                     <p class="report-title">
                         3400 фотографий
                     </p>
-                    <div class="report-btn">
-                        <a href="#">скачать фото (200Мб)
+                    <a href="#">
+                        <div class="report-btn">скачать <span>фото (200Мб)</span>
                             <img src="images/event-down.svg" alt="">
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
 
                 <div class="report-tabs">
                     <div class="report-list">
                         <ul class="report-caption myBtnContainer">
                             <li class="report-active">
-                                <button class="btn " onclick="filterSelection('all')"> Show all</button>
+                                <button class="btn " onclick="filterSelection('all')">Все фото</button>
                             </li>
                             <li>
                                 <button class="btn" onclick="filterSelection('20m')">20 марта</button>
@@ -368,9 +368,9 @@
 
             </div>
         </div>
-        <div class="report-more-btn container">
-            <a href="#">
-                <img src="images/speakers-more.svg" alt="">
+        <div class="report-more-btn container" onclick="rotateElement()">
+            <a>
+                <img class="philosophy-swiper-next-img" src="images/speakers-more.svg" alt="">
                 загрузить еще
             </a>
         </div>
@@ -378,7 +378,7 @@
 
 
     <footer class="footer">
-        <div class="footer-content">
+        <div class="footer-content footer-content-two">
             <div class="footer-about">
                 <div class="footer-metro">
                     <p class="footer-logo__text">организатор</p>
@@ -388,14 +388,6 @@
                         </a>
                     </div>
                 </div>
-<!--                <div class="footer-sber">-->
-<!--                    <p class="footer-logo__text footer-logo__text-two">Стратегический партнер</p>-->
-<!--                    <div class="footer-logo">-->
-<!--                        <a href="#">-->
-<!--                            <img src="images/footer-logo2.png" alt="">-->
-<!--                        </a>-->
-<!--                    </div>-->
-<!--                </div>-->
             </div>
             <div class="footer-items">
                 <div class="footer-item">
@@ -466,7 +458,8 @@
                                               autocomplete="off" type="text" placeholder="Текст сообщения"></textarea>
 
 
-                                    <div class="g-recaptcha footer-modal__control" data-sitekey="6Lfg7lIUAAAAAFO5ncDbbRD-Z6tyOh84OS-3LXGO"
+                                    <div class="g-recaptcha footer-modal__control"
+                                         data-sitekey="6Lfg7lIUAAAAAFO5ncDbbRD-Z6tyOh84OS-3LXGO"
                                          style="margin: 0px 0px 0px 72px;">
                                         <div style="width: 304px; height: 78px;">
                                             <div>
@@ -498,24 +491,26 @@
             </div>
         </div>
     </footer>
-</section>
-</body>
 
+</section>
 <div class="report-gallery">
     <div class="report-gallery-container">
-        <span class="report-gallery-container-span" onclick="closeGallery()">
-            <svg width="53" height="52" viewBox="0 0 53 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g opacity="0.3">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M26.0446 52C40.4286 52 52.0892 40.3594 52.0892 26C52.0892 11.6406 40.4286 0 26.0446 0C11.6606 0 0 11.6406 0 26C0 40.3594 11.6606 52 26.0446 52Z"
-                      fill="#F6F6F6"/>
-                <path d="M26.2146 25.9992L37.2435 35.641" stroke="#283583" stroke-width="3" stroke-linecap="round"/>
-                <path d="M26.2146 25.9999L37.2435 16.3581" stroke="#283583" stroke-width="3" stroke-linecap="round"/>
-                <path d="M26.6297 25.9999L15.6007 16.3581" stroke="#283583" stroke-width="3" stroke-linecap="round"/>
-                <path d="M26.6297 25.9992L15.6007 35.6409" stroke="#283583" stroke-width="3" stroke-linecap="round"/>
-            </g>
-        </svg>
-        </span>
+            <span class="report-gallery-container-span" onclick="closeGallery()">
+                <svg width="53" height="52" viewBox="0 0 53 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.3">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M26.0446 52C40.4286 52 52.0892 40.3594 52.0892 26C52.0892 11.6406 40.4286 0 26.0446 0C11.6606 0 0 11.6406 0 26C0 40.3594 11.6606 52 26.0446 52Z"
+                          fill="#F6F6F6"/>
+                    <path d="M26.2146 25.9992L37.2435 35.641" stroke="#283583" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M26.2146 25.9999L37.2435 16.3581" stroke="#283583" stroke-width="3"
+                          stroke-linecap="round"/>
+                    <path d="M26.6297 25.9999L15.6007 16.3581" stroke="#283583" stroke-width="3"
+                          stroke-linecap="round"/>
+                    <path d="M26.6297 25.9992L15.6007 35.6409" stroke="#283583" stroke-width="3"
+                          stroke-linecap="round"/>
+                </g>
+            </svg>
+            </span>
         <div class="report-gallery-swiper swiper mySwiper5">
             <div class="report-gallery-swiper-wrapper swiper-wrapper">
                 <div class="report-gallery-swiper-slide swiper-slide">
@@ -555,10 +550,8 @@
         </div>
     </div>
 </div>
-
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="js/header.js"></script>
-<script src="js/main.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/swiper.js"></script>
 </body>
 
 </html>
