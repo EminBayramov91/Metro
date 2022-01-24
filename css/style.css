@@ -37,3 +37,8 @@
         margin-right: 0;
     }
 }
+}
+
+.hederItemBtn{
+    display: none;
+}
